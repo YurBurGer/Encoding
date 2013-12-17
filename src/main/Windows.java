@@ -30,7 +30,6 @@ import codingThreads.HaffmanThread;
 import codingThreads.ShennonThread;
 import dataClasses.Interval;
 import dataClasses.TableRow;
-import javax.swing.ScrollPaneConstants;
 
 public class Windows extends JFrame {
 
