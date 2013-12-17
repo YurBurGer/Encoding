@@ -1,9 +1,9 @@
-package main;
+package dataClasses;
 
 public class TableRow implements Comparable<TableRow>{
-	Integer p;
-	String s;
-	String code="";
+	private Integer p;
+	private String s;
+	private String code="";
 	public TableRow(Integer p, String s) {
 		super();
 		this.p = p;

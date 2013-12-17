@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import main.TableRow;
+import dataClasses.ResultComparator;
+import dataClasses.TableRow;
 
 public class ShennonThread extends Thread{
 	private List<TableRow> spt=new ArrayList<>();

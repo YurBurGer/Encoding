@@ -5,7 +5,8 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import main.TableRow;
+import dataClasses.ResultComparator;
+import dataClasses.TableRow;
 
 public class HaffmanThread extends Thread{
 	private List<TableRow> spt=new ArrayList<>();

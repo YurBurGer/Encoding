@@ -1,10 +1,8 @@
-package codingThreads;
+package dataClasses;
 
 import java.util.Comparator;
 
-import main.TableRow;
-
-class ResultComparator implements Comparator<TableRow>{
+public class ResultComparator implements Comparator<TableRow>{
 	@Override
 	public int compare(TableRow o1, TableRow o2) {
 		Integer l1=o1.getCode().length(),l2=o2.getCode().length();

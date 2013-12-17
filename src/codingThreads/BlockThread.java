@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import main.TableRow;
+import dataClasses.TableRow;
 
 public class BlockThread extends Thread{
 	List<TableRow> Shennon=new LinkedList<>();
@@ -28,6 +28,7 @@ public class BlockThread extends Thread{
 	}	
 	public BlockThread(List<TableRow> inp) {
 		super();
+		this.setDaemon(true);
 		this.inp.clear();
 		this.Shennon.clear();
 		this.Haffman.clear();
@@ -51,7 +52,7 @@ public class BlockThread extends Thread{
 	private LinkedList<TableRow> makeBlocks(List<TableRow> l,int b) {
 		if(b==2){
 			LinkedList<TableRow> result=new LinkedList<>();
-			for(TableRow t1:l)
+			for(TableRow t1:inp)
 				for(TableRow t2:l)
 					result.add(new TableRow(t1.getP()*t2.getP(), t1.getS().concat(t2.getS())));
 			Collections.sort(result);
